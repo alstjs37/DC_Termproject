@@ -81,6 +81,7 @@ logoff                                 # send message to server for loging off
 ```
 
 ## 주의 사항
+- client.py 의 SERVER_HOST 에는 server.py를 실행시킨 서버의 ip 주소를 입력한다.
 - 같은 공유기를 사용하여 내부망 ip를 통해 연결할 때는 port-forwarding 하지 않아도 된다.
 - 만약 다른 공유기에 물려있거나 외부 ip를 사용할 때는 code에서 지정한 port_num(12937)으로 port-forwarding 해주어야 한다.
 - 'ctrl-c' 에 의한 종료도 online_peers 명단에서 제외된다.
