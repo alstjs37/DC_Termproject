@@ -1,10 +1,6 @@
 # DC_Termproject
 > P2P baseball game with napster-style server
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 peer들의 정보(ip address & port)를 저장하고 있는 서버를 한 대 두고 그 서버에서 온라인 상태의 peer정보를 받아와
 peer끼리 서로 연결을 한 뒤 숫자야구 게임을 진행한다.
 
@@ -22,7 +18,7 @@ Linux :
 git clone https://github.com/alstjs37/DC_Termproject.git
 ```
 
-## 사용 예제
+## 실행 방법
 
 Server :
 
@@ -36,20 +32,24 @@ client :
 python3 -u client.py
 ```
 
+## command in client
+
+#### when client communication with server :
+```sh
+help                                 # to lookup command (display all possible commands and their description)
+online_users                         # send a request to the server, get back a list of all online peers and display them on the screen
+logoff                               # send a message to server for logging off
+```
+
+#### when client communication with peer :
+```sh
+connect [ip] [port]                  # request to play a game with the given IP and port
+start                                # send a message to peer to start baseball game
+guess [peer_ip] [guessing number]    # send a guessing number to the peer
+answer [peer_ip] [answer to guess]   # send a response to guessing number (automatically)
+disconnect [peer_ip]                 # end your game session with peer
+```
 
 ## 정보
 
-이름 – [@트위터 주소](https://twitter.com/dbader_org) – 이메일주소@example.com
-
-XYZ 라이센스를 준수하며 ``LICENSE``에서 자세한 정보를 확인할 수 있습니다.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
-
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
+201911523 이민선
