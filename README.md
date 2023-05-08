@@ -54,8 +54,8 @@ disconnect [peer_ip]                 # end your game and disconnect with peer
 
 ```sh
 ##### communication with server
-help                                   # to notify commands
-online_users                           # to notify online peers infomation
+help                                   # to recognize commands
+online_users                           # to recognize online peers infomation
 
 connect [peer_ip] [port]               # connect peer who you want to game
 
