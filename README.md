@@ -32,7 +32,7 @@ client :
 python3 -u client.py
 ```
 
-## command in client
+## command of client
 
 #### when client communication with server :
 ```sh
