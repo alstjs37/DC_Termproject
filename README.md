@@ -85,6 +85,8 @@ logoff                                 # send message to server for loging off
 - connect & guess 명령어를 사용할 때는 반드시 주어진 명령어 형식대로 입력해주어야 한다.
   - error가 발생한다.
   - 이 경우 연결된 peer 모두 종료하고 다시 시작 해주어야 한다.
+- 같은 공유기를 사용하여 내부망 ip를 통해 연결할 떄는 port-forwarding 하지 않아도 된다.
+- 만약 다른 공유기에 물려있거나 외부 ip를 사용할 떄는 code에서 지정한 port_num(12937)으로 port-forwarding 해주어야 한다.
 
 ## 정보
 
