@@ -7,7 +7,7 @@ peer들의 정보(ip address & port)를 저장하고 있는 서버를 한 대 �
 ## 개발 환경
 ```sh
 OS : Ubuntu 20.04.5 LTS
-python3 : python 3.8.10
+language : python 3.8.10
 ```
 
 ## 설치 방법
