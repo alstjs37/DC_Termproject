@@ -65,6 +65,8 @@ connect [peer_ip] [port]               # connect peer who you want to game
 start                                  # to start 3-digit baseball game
 guess [peer_ip] [guessing number]      # send message with your 3-digit guessing number
 
+### 게임이 종료된거긴 하지만 아직 peer와의 연결이 끊긴 상태가 아니다. 
+### peer와의 연결 종료를 위해서는 disconnect 명령어를 사용해야 한다.
 # when correct and game over with peer
 start                                  # if you want to start again
 disconnect [peer_ip]                   # to end game and disconnect with peer
@@ -79,7 +81,7 @@ logoff                                 # send message to server for loging off
 ```
 
 ## 주의 사항
-- ctrl-C 에 의한 종료도 online_peers 명단에서 제외된다.
+- 'ctrl-c' 에 의한 종료도 online_peers 명단에서 제외된다.
 - connect & guess 명령어를 사용할 때는 반드시 주어진 명령어 형식대로 입력해주어야 한다.
   - error가 발생한다.
   - 이 경우 연결된 peer 모두 종료하고 다시 시작 해주어야 한다.
